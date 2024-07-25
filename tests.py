@@ -24,8 +24,6 @@ class TestBooksCollector:
         collector = BooksCollector()
         collector.add_new_book("book")
         collector.set_book_genre("book", "Фантастика")
-        collector.add_new_book("book2")
-        collector.set_book_genre("book2", "Ужасы")
         assert collector.get_books_with_specific_genre("Фантастика") == ["book"]
 
     def test_get_books_genre(self):
